@@ -1,9 +1,15 @@
-package de.eldoria.kingofthehill.config;
+/*
+ *     SPDX-License-Identifier: AGPL-3.0-only
+ *
+ *     Copyright (C) 2022 RainbowDashLabs and Contributor
+ */
+
+package de.chojo.kingofthehill.config;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
-import de.eldoria.kingofthehill.util.FileUtil;
+import de.chojo.kingofthehill.util.FileUtil;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.jetbrains.annotations.Nullable;
@@ -18,7 +24,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.TreeMap;
 
-import static de.eldoria.kingofthehill.util.FileUtil.home;
+import static de.chojo.kingofthehill.util.FileUtil.home;
 
 @Data
 @Slf4j

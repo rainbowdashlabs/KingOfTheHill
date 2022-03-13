@@ -1,8 +1,14 @@
-package de.eldoria.kingofthehill;
+/*
+ *     SPDX-License-Identifier: AGPL-3.0-only
+ *
+ *     Copyright (C) 2022 RainbowDashLabs and Contributor
+ */
 
-import de.eldoria.kingofthehill.config.Configuration;
-import de.eldoria.kingofthehill.listener.CommandListener;
-import de.eldoria.kingofthehill.scheduler.KingChecker;
+package de.chojo.kingofthehill;
+
+import de.chojo.kingofthehill.config.Configuration;
+import de.chojo.kingofthehill.listener.CommandListener;
+import de.chojo.kingofthehill.scheduler.KingChecker;
 import lombok.extern.slf4j.Slf4j;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.sharding.DefaultShardManagerBuilder;

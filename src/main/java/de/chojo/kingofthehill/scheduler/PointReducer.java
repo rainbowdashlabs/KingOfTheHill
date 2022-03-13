@@ -1,6 +1,12 @@
-package de.eldoria.kingofthehill.scheduler;
+/*
+ *     SPDX-License-Identifier: AGPL-3.0-only
+ *
+ *     Copyright (C) 2022 RainbowDashLabs and Contributor
+ */
 
-import de.eldoria.kingofthehill.config.Configuration;
+package de.chojo.kingofthehill.scheduler;
+
+import de.chojo.kingofthehill.config.Configuration;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

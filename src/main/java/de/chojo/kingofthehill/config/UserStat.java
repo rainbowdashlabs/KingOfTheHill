@@ -1,4 +1,10 @@
-package de.eldoria.kingofthehill.config;
+/*
+ *     SPDX-License-Identifier: AGPL-3.0-only
+ *
+ *     Copyright (C) 2022 RainbowDashLabs and Contributor
+ */
+
+package de.chojo.kingofthehill.config;
 
 import lombok.Data;
 import org.jetbrains.annotations.NotNull;

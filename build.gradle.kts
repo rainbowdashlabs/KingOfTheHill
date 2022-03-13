@@ -2,6 +2,7 @@ plugins {
     id("com.github.johnrengelman.shadow") version "7.1.0"
     java
     `maven-publish`
+    id("org.cadixdev.licenser") version "0.6.1"
 }
 
 repositories {
@@ -13,6 +14,11 @@ repositories {
     maven {
         url = uri("https://repo.maven.apache.org/maven2/")
     }
+}
+
+license {
+    header(rootProject.file("HEADER.txt"))
+    include("**/*.java")
 }
 
 dependencies {
@@ -31,7 +37,7 @@ dependencies {
     annotationProcessor("org.projectlombok", "lombok", "1.18.22")
 }
 
-group = "de.eldoria"
+group = "de.chojo"
 version = "1.0"
 description = "KingOfTheHill"
 java.sourceCompatibility = JavaVersion.VERSION_11
@@ -40,7 +46,7 @@ tasks {
     shadowJar {
         mergeServiceFiles()
         manifest {
-            attributes(mapOf("Main-Class" to "de.eldoria.kingofthehill.KingOfTheHill"))
+            attributes(mapOf("Main-Class" to "de.chojo.kingofthehill.KingOfTheHill"))
         }
     }
     build {
